@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="./images/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="main" class="row height-adjustment align-items-center">
+      <aside class="col-sm-4 p-4 text-center height-90" id="aside">
+        <div class="row height-30 justify-content-center align-items-center">
+          <h1>Lord Of The Rings</h1>
+        </div>
+        <div class="row height-30  justify-content-center align-items-center">
+          <button id="controlButton" class="no-border" onclick="controlButton()">Please tell us about yourself &#x2934;
+          </button>
+        </div>
+        <div class="row height-30 justify-content-center align-items-end p-3">
+          <img src="./images/ring.png" alt="ring">
+        </div>
+      </aside>
+
+      <article id="introductionDiv" class="col-sm-4  text-center">
+        <h1>First, let's get to know you</h1>
+        <label for="userName">What is your name?</label><br>
+        <input type="text" id="userName" value="Jon Doe"><br>
+        Male
+        <input type="radio" id="male" value="male" name="gender" checked>
+        Female
+        <input type="radio" id="female" value="female" name="gender"><br>
+        <label for="userName">How old are you?</label><br>
+        <input type="number" id="userAge" value="20"><br>
+        <label for="excitementLevel">How Excited are you for this?</label>
+        <br>
+        <div id="excitementLevelContainer">
+          <input type="range" min="10" max="100" step="10" value="50" id="excitementLevel">
+        </div><img class="excited-icon" src="./images/excited.png" alt="excitement">
+        <br><br>
+        <input type="submit" value="Ok, I am ready" onclick="submitBeforePlaying()">
+      </article>
+
+      <article id="questionDiv" class="col-sm-4 no-display ">
+      </article>
+
+
+      <section id="answersDiv" class="px-5 col-sm-4 no-display height-60 ">
+        <div class="row height-25 align-items-center justify-content-center my-4">
+          <button class="answer-button" id="answerButton1" onclick="sendAnswer(1)">Button 1</button>
+        </div>
+        <div class="row height-25 align-items-center justify-content-center my-4">
+          <button class="answer-button" id="answerButton2" onclick="sendAnswer(2)">Button 2</button>
+        </div>
+        <div class="row height-25 align-items-center justify-content-center my-4">
+          <button class="answer-button" id="answerButton3" onclick="sendAnswer(3)">Button 3</button>
+        </div>
+        <div class="row height-25 align-items-center justify-content-center my-4">
+          <button class="answer-button" id="answerButton4" onclick="sendAnswer(4)">Button 4</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

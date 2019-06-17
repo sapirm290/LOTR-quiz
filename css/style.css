@@ -1,0 +1,130 @@
+body {
+  color: #555555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+}
+
+.container {
+  background-image: url("../images/bg-wood-to-whitish-edited.jpg");
+  background-size: contain;
+  background-size: 100%;
+  min-height: 100vh;
+}
+
+aside h4,
+aside h1,
+aside button {
+  color: #fff;
+  font-weight: 550;
+}
+
+#controlButton {
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    cursor: pointer;
+  }
+  
+
+input[type="submit"] {
+  border-radius: 15px;
+}
+
+#excitementLevelContainer {
+  border: 3px solid #888888;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+#excitementLevel:focus {
+  outline: none;
+}
+
+.excited-icon {
+  height: 25px;
+  width: 25px;
+}
+
+#questionDiv {
+  font-size: 2rem;
+}
+
+.figure {
+  max-height: 600px;
+}
+
+button.answer-button {
+  border-radius: 10px;
+  background-color: #dedede;
+  border: 3px solid #caa47e;
+  overflow: hidden;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+
+.no-display {
+  display: none;
+}
+
+.no-border {
+  border: none;
+}
+
+.italic-bold {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.height-adjustment {
+  height: 900px;
+}
+
+.height-90 {
+  height: 90%;
+}
+
+.height-60 {
+  height: 60%;
+}
+
+.height-30 {
+  height: 30%;
+}
+
+.height-25 {
+  height: 25%;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+  #answersDiv {
+    height: 25%;
+  }
+  .height-25 {
+    height: 19%;
+  }
+  aside.height-90 {
+    height: 45%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  button.answer-button {
+    font-size: 0.75rem;
+  }
+
+  #questionDiv {
+    font-size: 1rem;
+  }
+}
